@@ -1,24 +1,3 @@
-"   .  . .  .  . .  . S@t.. .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  .  . .  ..
-"    .     ..t%SXSS%:;t.X8S% .   .      .       .       .       .       .       .       .       .       .       .       .
-"      . %St8;8:X;8:8:8%8;%%:@S:    . .    . .    ....    .  .    .  .    .  .    .  .    .  .    .  .    .  .    .  ....
-"  .    8: %.;t;S;%@88:X.8X8%;8S t@@%   .  %@@t  .X88X .      .       .   %@@@@@@@@@X:  .     .       .       .       .  
-"    ..X.;X%8t8%8ttX.88;8.8%:;% ;8:SX%.   SX.8S.  St88:  .  .   .  .    ..XS.@%SSS88S@:. X@@%  . . .    .  .    .  ......
-"   . X;:;8SS888;8tt;8:8:8; t:t8S 8:Xt.  :8888: .%888:.  .SSSSSSSSSSS%:  .S888t   @@8X: .%.88  .SSt  .:SS;  .%SSSSSSSS%. 
-"    :t8 :;X8S;8.8S;8S.8.t8:%8XS.. S8.8:.S8;8;  :@;@88 . S:88 X.88@88:@t..%S.  .. X;8@: :%:;8. X%:X;. 8;.;  %S8@XXSXSS8..
-"  .t88; X;8S8888;8S8t 8S88SSStt:. @.%8St;@8X  . t .8S   S:88:%888%;8t8:..S.S@%SSS8S88t .% @;  X:.X.  88t :.t@t8@ .......
-"  8; :888XSStS;88;88X%;;tt::;;8@ ..%X88:88Xt    .S@.::. S@8% X8.@;S888X .%;88SSSS.SX.:. 8S88: @;88t. 8.S8  t;@8@88@88S..
-"  S. :tX: ;%8S8 : .::. %8t  %S 8.  @88t8 8t.  . . .@8;  8888 @@%S;t8.8S .:SX8; .:.... . S8; ..8888:..8:8@: ;St@@888.@@..
-"    :8:;888888 .; .     8%8@       .8X.@8X  .    X%8@  .t@8S X88X:%888X .@8@8t  ..  .   SX%X .X;;S@%tS8; ;..SttSXS8888S.
-"    t.8XX;;8X% XX.  .    %8X8;   . :tX8@t     .  t8X8:  %@@S X8@@:t8tXt...:%t..       . X:8X  X8@@88@888t. %88t888 888t.
-"  .    :8;S: . S@.       t8;8:: .   .;:;. . .   .%@%:   t%%; .%%;..: t. .;  :  . . .    %;8.  ;X;X%.:.: t  ;t  ;:: :t;..
-"     :%@t%8   88.  .  .  :: . ..   .   .          .   . ..  .      ..   .    .       . . ... .   . .   .        ..      
-"      .. 8888   ..      ...   . .    .   .  . .     .   ..    .  .    .        .   .   . ..    .  .  .   .  . .     ....
-"
-" Author: chxuan <787280310@qq.com>
-" Repository: https://github.com/chxuan/vimplus
-" Create Date: 2016-04-10
-" License: MIT
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 通用设置
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -109,44 +88,25 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'chxuan/cpp-mode'
-Plug 'chxuan/vim-edit'
 Plug 'chxuan/change-colorscheme'
-Plug 'chxuan/prepare-code'
-Plug 'chxuan/vim-buffer'
-Plug 'chxuan/vimplus-startify'
-Plug 'chxuan/tagbar'
 Plug 'Valloric/YouCompleteMe'
 Plug 'Yggdroot/LeaderF'
 Plug 'mileszs/ack.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'haya14busa/incsearch.vim'
-Plug 'iamcco/mathjax-support-for-mkdp'
-Plug 'iamcco/markdown-preview.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'godlygeek/tabular'
-Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/vim-slash'
-Plug 'junegunn/gv.vim'
-Plug 'kana/vim-textobj-user'
-Plug 'kana/vim-textobj-indent'
-Plug 'kana/vim-textobj-syntax'
-Plug 'kana/vim-textobj-function'
-Plug 'sgur/vim-textobj-parameter'
-Plug 'Shougo/echodoc.vim'
 Plug 'terryma/vim-smooth-scroll'
-Plug 'rhysd/clever-f.vim'
-Plug 'rhysd/github-complete.vim'
 Plug 'vim-scripts/indentpython.vim'
 
 call plug#end()            
@@ -160,16 +120,8 @@ nnoremap <leader>e :edit $MYVIMRC<cr>
 " 查看vimplus的help文件
 nnoremap <leader>h :edit ~/.vimplus/help.md<cr>
 
-" 打开当前光标所在单词的vim帮助文档
-nnoremap <leader>H :execute ":help " . expand("<cword>")<cr>
-
 " 重新加载vimrc文件
 nnoremap <leader>s :source $MYVIMRC<cr>
-
-" 安装、更新、删除插件
-nnoremap <leader><leader>i :PlugInstall<cr>
-nnoremap <leader><leader>u :PlugUpdate<cr>
-nnoremap <leader><leader>c :PlugClean<cr>
 
 " 分屏窗口移动
 nnoremap <c-j> <c-w>j
@@ -257,31 +209,6 @@ nnoremap <leader>o :YcmCompleter GoToInclude<cr>
 nnoremap <leader>ff :YcmCompleter FixIt<cr>
 nmap <F5> :YcmDiags<cr>
 
-" ctags
-set tags+=/usr/include/tags
-set tags+=~/.vim/systags
-set tags+=~/.vim/x86_64-linux-gnu-systags
-let g:ycm_collect_identifiers_from_tags_files = 1
-let g:ycm_semantic_triggers =  {
-  \   'c' : ['->', '.','re![_a-zA-z0-9]'],
-  \   'objc' : ['->', '.', 're!\[[_a-zA-Z]+\w*\s', 're!^\s*[^\W\d]\w*\s',
-  \             're!\[.*\]\s'],
-  \   'ocaml' : ['.', '#'],
-  \   'cpp,objcpp' : ['->', '.', '::','re![_a-zA-Z0-9]'],
-  \   'perl' : ['->'],
-  \   'php' : ['->', '::'],
-  \   'cs,java,javascript,typescript,d,python,perl6,scala,vb,elixir,go' : ['.'],
-  \   'ruby' : ['.', '::'],
-  \   'lua' : ['.', ':'],
-  \   'erlang' : [':'],
-  \ }
-let g:ycm_semantic_triggers.c = ['->', '.', ' ', '(', '[', '&',']']
-
-" tagbar
-let g:tagbar_width = 30
-nnoremap <silent> <leader>t :TagbarToggle<cr>
-inoremap <silent> <leader>t <esc> :TagbarToggle<cr>
-
 " incsearch.vim
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
@@ -318,34 +245,14 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Unknown"   : "?"
     \ }
 
-" LeaderF
-nnoremap <leader>f :LeaderfFile ~<cr>
-let g:Lf_WildIgnore = {
-            \ 'dir': ['.svn','.git','.hg','.vscode','.wine','.deepinwine','.oh-my-zsh'],
-            \ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
-            \}
-let g:Lf_UseCache = 0
-
 " ack
 nnoremap <leader>F :Ack!<space>
-
-" echodoc.vim
-let g:echodoc_enable_at_startup = 1
-
-" tabular
-nnoremap <leader>l :Tab /\|<cr>
-nnoremap <leader>= :Tab /=<cr>
 
 " vim-smooth-scroll
 noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
 noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
 noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
 noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
-
-" gv
-nnoremap <leader>g :GV<cr>
-nnoremap <leader>G :GV!<cr>
-nnoremap <leader>gg :GV?<cr>
 
 " 个性化
 if filereadable(expand($HOME . '/.vimrc.local'))
